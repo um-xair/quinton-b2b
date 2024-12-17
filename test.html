@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white flex items-center justify-center h-screen">
+    <div id="page1" class="w-full flex flex-col h-full">
+        <img src="assets/pic.jpg" alt="boarding-img" class="mt-20 w-full max-w-[450px] mb-4 mx-auto">
+        <div class="bg-[#F3BF01] rounded-t-[50px] p-10 flex flex-col justify-between flex-grow">
+            <div class="flex-grow mb-6 text-justify">
+                <h1 class="text-2xl text-[#1E201E] font-extrabold mb-2">Improved Collaboration</h1>
+                <p class="text-sm text-[#1E201E]">
+                    Enhance team collaboration with shared workspaces, real-time updates, and efficient communication tools.
+                </p>
+            </div>
+            <div class="flex justify-between items-center">
+                <button class="text-lg text-[#1E201E] underline" onclick="skip()">Skip</button>
+                <button class="text-lg bg-[#1E201E] text-white px-4 py-4 rounded-[30px] font-semibold flex items-center justify-center" onclick="nextPage(2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
