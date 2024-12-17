@@ -13,7 +13,7 @@
         }
     </style>
 </head>
-<body class="bg-[#F2F2F2]">
+<body class="bg-[#F2F2F2] overflow-auto mb-[500px]">
 
     <header class="w-full bg-[#F3BF01] text-white px-4 py-10 rounded-b-[50px]">
         <div class="flex items-center justify-between px-4">
