@@ -13,11 +13,11 @@
         }
     </style>
 </head>
-<body class="bg-[#F2F2F2] overflow-auto mb-[500px]">
+<body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
 
     <header class="w-full bg-[#F3BF01] text-white px-4 py-10 rounded-b-[50px]">
         <div class="flex items-center justify-between px-4">
-            <div class="lg:hidden">
+            <div class="">
                 <button id="hamburger" class="text-[#181C14] text-2xl">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <div id="menu" class="fixed inset-0 bg-[#F3BF01] text-white transform -translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div id="menu" class="fixed inset-0 bg-[#F3BF01] text-white transform -translate-x-full transition-transform duration-300 overflow-y-auto z-[9999]">
         <div class="flex items-center justify-between px-4 py-10 bg-white h-32">
             <div class="px-2">
                 <button id="closeMenu" class="bg-[#181C14] text-white text-md px-4 py-2 rounded-full">
@@ -158,7 +158,7 @@
         });
     </script>
 
-    <div class="fixed bottom-10 left-4 right-4 bg-yellow-400 py-4 px-4 rounded-full">
+    <div class="fixed bottom-10 left-4 right-4 bg-yellow-400 py-4 px-4 rounded-full z-[999]">
         <div class="flex justify-around">
             <div class="bg-white rounded-full p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#181C14">
