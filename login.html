@@ -12,51 +12,78 @@
             font-family: 'Poppins', sans-serif;
         }
         .custom-clip {
-            clip-path: ellipse(98% 63% at 7% 0%);
+            clip-path: ellipse(100% 40% at 10% 0%);
         }
     </style>
 </head>
-<body class="flex items-end justify-center min-h-screen bg-[#F3BF01]">
-    <div class="relative w-full h-[500px] bg-white overflow-hidden custom-clip">
-        <div class="relative z-10 p-6 text-center h-full flex flex-col justify-center">
-            <h1 class="text-2xl font-bold text-gray-900 mb-2">Glad You're Here</h1>
-            <p class="text-sm text-gray-600 mb-6">please login to your account</p>
-            <form action="#" method="POST" class="space-y-4">
-                <div class="relative">
-                    <input
-                        type="email"
-                        placeholder="email@mail.com"
-                        class="w-full p-3 pl-12 text-gray-600 bg-gray-100 rounded-full outline-none focus:ring-2 focus:ring-yellow-500"
-                    />
-                    <span class="absolute left-4 top-3 text-gray-400">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                </div>
-                <div class="relative">
-                    <input
-                        type="password"
-                        placeholder="password"
-                        class="w-full p-3 pl-12 text-gray-600 bg-gray-100 rounded-full outline-none focus:ring-2 focus:ring-yellow-500"
-                    />
-                    <span class="absolute left-4 top-3 text-gray-400">
-                        <i class="fas fa-lock"></i>
-                    </span>
-                    <span class="absolute right-4 top-3 text-gray-400 cursor-pointer">
-                        <i class="fas fa-eye"></i>
-                    </span>
-                </div>
-                <div class="flex items-center gap-2 text-sm">
-                    <input type="checkbox" id="remember" class="h-4 w-4 text-yellow-500" />
-                    <label for="remember" class="text-gray-600">Remember Me</label>
-                </div>
+<body class="flex justify-center min-h-screen bg-[#F3BF01] items-center">
+    <div class="absolute w-full h-full bg-[#FFFFFF] overflow-hidden custom-clip">
+    </div>
+
+    <div class="flex flex-col justify-end items-center min-h-screen z-10 pb-20">
+        <h1 class="text-3xl font-extrabold text-[#181C14] mb-2">Glad You're Here</h1>
+        <p class="text-sm text-[#181C14] mb-6">Please login to your account</p>
+
+        <form action="#" method="POST" class="space-y-4 mt-4">
+            <div class="relative">
+                <input
+                    type="email"
+                    placeholder="email@mail.com"
+                    class="w-[300px] px-6 py-3 pl-12 text-gray-600 bg-white rounded-full outline-none focus:ring-2 focus:ring-yellow-500"
+                />
+                <span class="absolute left-4 top-3 text-[#181C14]">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+            <div class="relative">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="password"
+                    class="w-[300px] px-6 py-3 pl-12 text-gray-600 bg-white rounded-full outline-none focus:ring-2 focus:ring-yellow-500"
+                />
+                <span class="absolute left-4 top-3 text-[#181C14]">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <span
+                    class="absolute right-4 top-3 text-[#181C14] cursor-pointer"
+                    id="togglePassword"
+                >
+                    <i class="fas fa-eye" id="eyeIcon"></i>
+                </span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+                <input type="checkbox" id="remember" class="h-4 w-4 text-yellow-500" />
+                <label for="remember" class="text-[#181C14]">Remember Me</label>
+            </div>
+            <a href="msg.html">
                 <button
-                    type="submit"
-                    class="w-full bg-black text-white text-lg font-semibold p-3 rounded-full hover:bg-gray-800 transition duration-300"
+                    type="button"
+                    class="w-[300px] bg-[#181C14] text-white text-lg font-semibold px-4 py-4 rounded-full"
                 >
                     Login
                 </button>
-            </form>
-        </div>
+            </a>            
+        </form>        
     </div>
+
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('password');
+        const eyeIcon = document.getElementById('eyeIcon');
+
+        togglePassword.addEventListener('click', function (e) {
+            const type = passwordField.type === 'password' ? 'text' : 'password';
+            passwordField.type = type;
+
+            if (type === 'password') {
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            } else {
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            }
+        });
+    </script>
 </body>
 </html>
