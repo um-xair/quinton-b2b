@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+<?php include 'header.php'; ?>
+=======
 <?php include 'header.php'; ?>
 
     <div class="mt-10 w-full px-4">
@@ -144,3 +147,4 @@
 
 
 
+>>>>>>> 2ec2ea73237998d4d8d31d07c67666d2582294bd
