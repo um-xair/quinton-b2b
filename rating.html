@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit PFP</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,40 +21,59 @@
             </svg>
         </div>
 
-        <div class="mt-40 w-60 h-60 mx-auto mb-4">
+        <div class="mt-32 w-full h-60 mb-4">
             <h2 class="text-2xl font-bold text-[#181C14] mb-4">Are you happy with our service?</h2>
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="w-full h-full object-cover rounded-full">
+            <img id="service-image" src="assets/5star.gif" alt="Profile Picture" class="w-52 h-52 mx-auto object-cover">
+            <p id="service-desc" class="text-lg text-[#181C14] mt-2">Absolutely fantastic!</p>
+        
+            <div class="flex justify-center items-center mt-2">
+                <i class="fa fa-star text-[#F3BF01] text-5xl" onclick="setRating(1)"></i>
+                <i class="fa fa-star text-[#F3BF01] text-5xl" onclick="setRating(2)"></i>
+                <i class="fa fa-star text-[#F3BF01] text-5xl" onclick="setRating(3)"></i>
+                <i class="fa fa-star text-[#F3BF01] text-5xl" onclick="setRating(4)"></i>
+                <i class="fa fa-star text-[#F3BF01] text-5xl" onclick="setRating(5)"></i>
+            </div>
+
+            <textarea class="mt-6 w-full p-4 border border-[#ccc] rounded-lg" placeholder="Write your review..."></textarea>
         </div>
 
-        <!-- Text Feedback -->
-        <p class="text-lg text-[#181C14] mt-2">Hmm, not great.</p>
-
-        <!-- Star Rating -->
-        <div class="flex justify-center items-center mt-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#F3BF01" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17.27L18.18 21 16.54 13.97l5.46-4.73-7.19-.62L12 2 9.23 9.62 2 10.28l5.46 4.73L5.82 21z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17.27L18.18 21 16.54 13.97l5.46-4.73-7.19-.62L12 2 9.23 9.62 2 10.28l5.46 4.73L5.82 21z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17.27L18.18 21 16.54 13.97l5.46-4.73-7.19-.62L12 2 9.23 9.62 2 10.28l5.46 4.73L5.82 21z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17.27L18.18 21 16.54 13.97l5.46-4.73-7.19-.62L12 2 9.23 9.62 2 10.28l5.46 4.73L5.82 21z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M12 17.27L18.18 21 16.54 13.97l5.46-4.73-7.19-.62L12 2 9.23 9.62 2 10.28l5.46 4.73L5.82 21z"/>
-            </svg>
-        </div>
-
-        <!-- Textarea for Review -->
-        <textarea class="mt-4 w-full p-4 border border-[#ccc] rounded-lg" placeholder="Write your review..."></textarea>
-
-        <!-- Submit Button -->
         <div class="absolute bottom-10 w-full px-4">
-            <button type="submit" class="w-full bg-red-500 py-4 rounded-full text-white font-bold">Submit</button>
+            <button type="submit" class="w-full bg-[#181C14] py-4 rounded-full text-white font-bold">Submit</button>
         </div>
     </div>
+
+    <script>
+        function setRating(starCount) {
+            const image = document.getElementById("service-image");
+            const desc = document.getElementById("service-desc");
+            const stars = document.querySelectorAll(".fa-star");
+            stars.forEach((star, index) => {
+                if (index < starCount) {
+                    star.classList.add("fa-solid");
+                    star.classList.remove("fa-regular");
+                } else {
+                    star.classList.add("fa-regular");
+                    star.classList.remove("fa-solid");
+                }
+            });
+
+            if (starCount === 1) {
+                image.src = "assets/1star.gif";
+                desc.textContent = "Hmm, not great.";
+            } else if (starCount === 2) {
+                image.src = "assets/2star.gif";
+                desc.textContent = "It's okay.";
+            } else if (starCount === 3) {
+                image.src = "assets/3star.gif";
+                desc.textContent = "Pretty good!";
+            } else if (starCount === 4) {
+                image.src = "assets/4star.gif";
+                desc.textContent = "Good service!";
+            } else if (starCount === 5) {
+                image.src = "assets/5star.gif";
+                desc.textContent = "Excellent service!";
+            }
+        }
+    </script>
 </body>
 </html>
