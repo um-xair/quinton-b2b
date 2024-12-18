@@ -15,11 +15,13 @@
 </head>
 <body class="bg-[#F2F2F2] overflow-auto h-screen">
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
-        <div class="bg-[#181C14] rounded-full p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
-                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
-            </svg>
-        </div>
+        <a href="account.php">
+            <div class="bg-[#181C14] rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </div>
+        </a>
         <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Add New Address</h1>
     </div>
 
@@ -36,7 +38,6 @@
                 </div>
             </div>
 
-            <!-- New Password -->
             <div class="mb-4">
                 <label for="newPassword" class="block text-sm font-bold text-[#181C14]">New Password</label>
                 <div class="relative">
@@ -48,7 +49,6 @@
                 </div>
             </div>
 
-            <!-- Confirm New Password -->
             <div class="mb-4">
                 <label for="confirmPassword" class="block text-sm font-bold text-[#181C14]">Confirm New Password</label>
                 <div class="relative">
@@ -62,7 +62,6 @@
         </form>
     </div>
 
-    <!-- Fixed Submit Button -->
     <div class="fixed bottom-10 w-full px-6">
         <button type="submit" class="w-full bg-[#181C14] px-4 py-4 rounded-full text-white font-bold">Save Changes</button>
     </div>
@@ -82,8 +81,6 @@
             }
         }
     </script>
-
-    <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>

@@ -15,7 +15,7 @@
 </head>
 <body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
 
-    <div class="fixed bottom-10 left-4 right-4 bg-yellow-400 py-4 px-4 rounded-full z-[999]">
+    <div class="fixed bottom-10 left-4 right-4 bg-[#F3BF01] py-4 px-4 rounded-full z-[999]">
         <div class="flex justify-around">
             <div class="bg-white rounded-full p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#181C14">

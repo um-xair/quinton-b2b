@@ -14,11 +14,13 @@
 </head>
 <body class="bg-white h-screen flex items-center justify-center text-center px-6">
     <div class="relative w-full h-screen">
-        <div class="mt-10 absolute top-4 right-4 bg-[#181C14] text-white p-2 rounded-full cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-            </svg>
-        </div>
+        <a href="shop-edit.php">
+            <div class="mt-10 absolute top-4 right-4 bg-[#181C14] text-white p-2 rounded-full cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </div>
+        </a>
 
         <div class="mt-40 w-40 h-40 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
             <img id="profile-image" src="https://i.pinimg.com/736x/77/67/26/7767263d0002e31bbf715dcaef60af09.jpg" alt="Profile Picture" class="w-full h-full object-cover">
