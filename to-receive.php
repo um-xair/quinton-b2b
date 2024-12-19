@@ -37,18 +37,18 @@
                     </div>
                 </div>
                 <div>
-                    <div class="bg-[#F3BF01] w-32 h-12 flex items-center justify-center rounded-full px-4 py-2">
+                    <div class="bg-[#F3BF01] w-12 h-12 flex items-center justify-center rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#181C14">
                             <path d="M440-183v-274L200-596v274l240 139Zm80 0 240-139v-274L520-457v274Zm-80 92L160-252q-19-11-29.5-29T120-321v-318q0-22 10.5-40t29.5-29l280-161q19-11 40-11t40 11l280 161q19 11 29.5 29t10.5 40v318q0 22-10.5 40T800-252L520-91q-19 11-40 11t-40-11Zm200-528 77-44-237-137-78 45 238 136Zm-160 93 78-45-237-137-78 45 237 137Z"/>
                         </svg>
-                        <span class="text-sm font-medium text-[#181C14] ml-2">To Ship</span>
                     </div>
                 </div>
                 <div>
-                    <div class="bg-[#F3BF01] w-12 h-12 flex items-center justify-center rounded-full">
+                    <div class="bg-[#F3BF01] w-32 h-12 flex items-center justify-center rounded-full px-4 py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#181C14">
                             <path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/>
                         </svg>
+                        <span class="text-sm font-medium text-[#181C14] ml-2 text-left">To Receive</span>
                     </div>
                 </div>
                 <div>
@@ -86,9 +86,8 @@
                 <p class="text-md font-semibold text-[#181C14]">RM14990.00</p>
             </div>
 
-            <div class="flex space-x-4 mt-4">
-                <button class="w-1/2 bg-white border-2 border-[#F3BF01] text-[#181C14] py-3 rounded-full">Cancel order</button>
-                <button class="w-1/2 bg-[#F3BF01] text-[#181C14] py-3 rounded-full">Contact Seller</button>
+            <div class="flex justify-end mt-4">
+                <button class="w-1/2 bg-[#F3BF01] text-[#181C14] py-3 rounded-full">Track Order</button>
             </div>
         </div>
     </div>
