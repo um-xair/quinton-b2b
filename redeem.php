@@ -18,6 +18,7 @@
             height: 60vh; 
             position: relative;
         }
+        
     </style>
 </head>
 <body class="bg-[#F2F2F2]">
@@ -42,23 +43,39 @@
     </div>
 
     <div class="px-4">
-        <div class="flex items-center bg-white p-4 rounded-full shadow-lg">
-            <div class="w-16 h-16 bg-[#F3BF01] rounded-full flex items-center justify-center">
-                <img src="https://www.ogawaworld.net/image/cache/data/theme/products/Ogawa/OGAWA%20Master%20Drive%20AI%202.0/md-ai-2-0-black--1_180221112729-540x540_0.png" alt="Product Image" class="w-10 h-10 object-cover rounded-full">
+        <div id="redeem-box" class="flex items-center bg-white px-4 py-4 rounded-full transition-all">
+            <div id="redeem-img" class="w-32 h-32 bg-[#F3BF01] rounded-full flex items-center justify-center transition-all">
+                <img src="assets/redeem.png" alt="Product Image" class="w-24 h-24 object-cover rounded-full">
             </div>
 
-            <!-- Text section -->
-            <div class="ml-4">
-                <p class="text-xl font-semibold text-[#181C14]">OGAWA Master Drive AI 2.0</p>
-                <p class="text-sm text-[#181C14] mt-1">20,000 points to redeem</p>
-            </div>
-
-            <!-- Button section -->
-            <div class="ml-auto">
-                <button class="bg-[#F3BF01] text-[#181C14] px-6 py-2 rounded-full font-semibold">Redeem NOW!</button>
+            <div class="ml-4 flex flex-col justify-between">
+                <div>
+                    <p class="text-lg font-semibold text-[#181C14]">OGAWA Master Drive AI 2.0</p>
+                    <p class="text-xs text-[#181C14] mt-1">20,000 points to redeem</p>
+                </div>
+                <div class="mt-2">
+                    <button id="redeem-btn" class="bg-[#181C14] text-white px-6 py-2 rounded-full">Redeem NOW!</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // Get the elements
+        const redeemBtn = document.getElementById("redeem-btn");
+        const redeemBox = document.getElementById("redeem-box");
+        const redeemImg = document.getElementById("redeem-img");
+
+        // Add an event listener to the button
+        redeemBtn.addEventListener("click", function() {
+            // Slide the image to the right and change the box color
+            redeemImg.classList.toggle("ml-auto"); // Add margin-left to push the image to the right
+            redeemBox.classList.toggle("bg-[#4CAF50]"); // Change background color to green (for example)
+            redeemBox.classList.toggle("bg-white"); // Revert to white when clicked again
+        });
+    </script>
+        
+
 
 </body>
 </html>
