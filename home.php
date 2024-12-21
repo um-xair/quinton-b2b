@@ -1,8 +1,11 @@
 <?php include 'header.php'; ?>
 
 <div class="mt-10 w-full px-4">
-    <img src="assets/banner.png" alt="Banner" class="w-full h-full object-cover">
+    <a href="promo.php">
+        <img src="assets/banner.png" alt="Banner" class="w-full h-full object-cover">
+    </a>
 </div>
+
 
 <div class="mt-10 px-4">
     <div class="flex justify-between items-center mb-6">
