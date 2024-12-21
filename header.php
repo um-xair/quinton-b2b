@@ -64,16 +64,16 @@
 
             <a href="#">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
                         <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">My cart</p>
                 </div>
             </a>
 
-            <a href="#">
+            <a href="category.php">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
                         <path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">Category</p>
@@ -82,8 +82,8 @@
 
             <a href="#">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
-                        <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
+                        <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">Saved</p>
                 </div>
@@ -182,7 +182,7 @@
             <a href="home.php" class="bg-[#181C14] rounded-full p-4">
                 <img src="assets/q.png" alt="Icon" class="w-6 h-6"/>
             </a>
-            <a href="#" class="bg-white rounded-full p-4">
+            <a href="notification.php" class="bg-white rounded-full p-4">
                 <svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#181C14">
                     <path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/>
                 </svg>
