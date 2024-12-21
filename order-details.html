@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address</title>
+    <title>Order Details</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -15,11 +15,13 @@
 </head>
 <body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
-        <div class="bg-[#181C14] rounded-full p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
-                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
-            </svg>
-        </div>
+        <a href="order-approve.html">
+            <div class="bg-[#181C14] rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </div>
+        </a>
         <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Order Details</h1>
     </div>
 
@@ -93,8 +95,8 @@
 
     <div class="fixed bottom-10 left-4 right-4 bg-[#F3BF01] py-4 px-4 rounded-full z-[999]">
         <div class="flex justify-around gap-2">
-            <button class="w-1/2 bg-white text-[#181C14] py-3 rounded-full">Reject</button>
-            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full">Approve</button>
+            <button class="w-1/2 bg-white border-2 border-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='#'">Reject</button>
+                <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='to-pay.php'">Approve</button>
         </div>
     </div>
     

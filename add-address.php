@@ -13,13 +13,15 @@
         }
     </style>
 </head>
-<body class="bg-[#F2F2F2] overflow-auto mb-[80px]">
+<body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
-        <div class="bg-[#181C14] rounded-full p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
-                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
-            </svg>
-        </div>
+        <a href="address.php">
+            <div class="bg-[#181C14] rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+            </div>
+        </a>
         <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Add New Address</h1>
     </div>
 
@@ -72,8 +74,22 @@
                         <div class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform transition-transform duration-300 ease-in-out"></div>
                     </div>
                 </label>
+
+                <style>
+                    .toggle-checkbox.hidden {
+                        display: none;
+                    }
+                    .toggle-checkbox:checked + .toggle-bg {
+                        background-color: #4CAF50; 
+                    }
+                    .toggle-checkbox:checked + .toggle-bg .toggle-dot {
+                        transform: translateX(100%);
+                    }
+                </style>
             </div>
-            <button type="submit" class="w-full bg-[#181C14] px-4 py-3 rounded-full text-white font-bold">Save Address</button>
+            <div class="fixed bottom-10 left-4 right-4 py-4 px-4 rounded-full z-[999]">
+                <button type="submit" class="w-full bg-[#181C14] px-4 py-4 rounded-full text-white font-bold">Add Address</button>
+            </div>
         </form>
     </div>
 

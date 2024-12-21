@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address</title>
+    <title>Password Manager</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
                 </svg>
             </div>
         </a>
-        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Add New Address</h1>
+        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Password Manager</h1>
     </div>
 
     <div class="mt-10 px-6 pb-20">

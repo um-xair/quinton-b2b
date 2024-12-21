@@ -52,6 +52,7 @@
         <div class="px-2 py-4 mt-10">
             <h2 class="text-[#181C14] text-xl font-bold px-4">Explore More</h2>
             <div class="grid grid-cols-2 gap-2 px-4 py-4">
+            <a href="order-approve.html">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px] relative">
                     <div class="absolute top-2 right-2 bg-yellow-400 text-[#181C14] text-sm rounded-full px-4 py-2">1</div>
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
@@ -59,27 +60,35 @@
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">Order to approve</p>
                 </div>
+            </a>
 
+            <a href="#">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
                         <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">My cart</p>
                 </div>
-            
+            </a>
+
+            <a href="#">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
                         <path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">Category</p>
                 </div>
-            
+            </a>
+
+            <a href="#">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="http://www.w3.org/2000/svg" width="50px" fill="#181C14">
                         <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/>
                     </svg>
                     <p class="text-[#181C14] text-sm mt-2">Saved</p>
                 </div>
+            </a>
+
             </div>
         </div>
 
