@@ -101,20 +101,20 @@
             <img src="assets/stroller.webp" alt="Newest Release 1" class="w-full h-auto object-cover">
         </div>
         <div class="text-center">
-            <img src="assets/stroller.webp" alt="Newest Release 2" class="w-full h-auto object-cover">
+            <img src="assets/desc1.webp" alt="Newest Release 2" class="w-full h-auto object-cover">
         </div>
     </div>
     <div class="grid grid-cols-3 gap-2">
         <div class="text-center">
-            <img src="assets/stroller.webp" alt="Newest Release 3" class="w-full h-auto object-cover">
+            <img src="assets/desc3.webp" alt="Newest Release 3" class="w-full h-auto object-cover">
         </div>
         <div class="text-center">
-            <img src="assets/stroller.webp" alt="Newest Release 4" class="w-full h-auto object-cover">
+            <img src="assets/desc1.webp" alt="Newest Release 4" class="w-full h-auto object-cover">
         </div>
         <div class="relative text-center">
-            <img src="assets/stroller.webp" alt="Newest Release 5" class="w-full h-auto object-cover">
+            <img src="assets/desc3.webp" alt="Newest Release 5" class="w-full h-auto object-cover">
             <div class="absolute inset-0 bg-[#181C14] bg-opacity-50 flex items-center justify-center">
-                <span class="text-white text-2xl font-bold">5+</span>
+                <span class="text-white text-2xl font-bold">+2</span>
             </div>
         </div>
     </div>
