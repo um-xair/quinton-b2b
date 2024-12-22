@@ -12,7 +12,7 @@
 </div>
 
 <div class="mt-6 px-4">
-    <div class="bg-white p-6 rounded-[20px]">
+    <div class="bg-white p-6 rounded-[20px] text-justify">
         <h3 class="font-bold text-[#181C14] text-lg mb-4">Exciting News! Our 12.12 Promotion is here!</h3>
         <p class="text-[#181C14] text-sm mb-4" id="promoText">
             Enjoy amazing discounts from December 12th to December 15th. Don’t miss out on special deals, including our exclusive stroller promotion!
@@ -39,7 +39,7 @@
     }
 </script>
 
-<div class="mt-4 px-4">
+<div class="mt-4 px-4 text-justify">
     <div class="bg-white p-6 rounded-[20px]">
         <h3 class="font-bold text-[#181C14] text-lg mb-4">Big Savings Alert!</h3>
         <p class="text-[#181C14] text-sm mb-4">
