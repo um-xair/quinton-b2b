@@ -29,8 +29,8 @@
         </div>
     
         <div class="text-left mt-6 px-4">
-            <h1 class="text-xl font-bold text-[#181C14]">Baby Shop</h1>
-            <p class="text-sm text-[#181C14] mt-2">Great companies are built by great people.</p>
+            <h1 class="text-xl font-bold text-[#181C14]">BABY SHOP</h1>
+            <p id="motivational-message" class="text-sm text-[#181C14] mt-2">Great companies are built by great people.</p>
         </div>
     </header>
 
@@ -194,6 +194,38 @@
             </a>
         </div>
     </div>
+
+    <script>
+        const motivationalMessages = [
+            "Success is the result of hard work and determination.",
+            "Believe in yourself and all that you are.",
+            "Every day is a chance to improve yourself.",
+            "Dream big and dare to fail.",
+            "Great things never come from comfort zones.",
+            "Stay positive, work hard, make it happen."
+        ];
+
+        function getGreeting() {
+            const hours = new Date().getHours();
+            if (hours < 12) {
+                return "Good morning!";
+            } else if (hours < 18) {
+                return "Good afternoon!";
+            } else {
+                return "Good evening!";
+            }
+        }
+
+        function updateMessage() {
+            const messageElement = document.getElementById('motivational-message');
+            const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+            const greeting = getGreeting();
+            messageElement.textContent = `${greeting} ${randomMessage}`;
+        }
+
+        setInterval(updateMessage, 60 * 60 * 1000);
+        updateMessage();
+    </script>
 
 </body>
 </html>
