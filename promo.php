@@ -27,33 +27,35 @@
     </div>
 
     <div class="mt-10 w-full px-4">
-        <a href="promo.php">
-            <img src="assets/banner.png" alt="Banner" class="w-full h-full object-cover">
-        </a>
+        <img src="assets/banner.png" alt="Banner" class="w-full h-full object-cover">
     </div>
 
     <div class="mt-10 px-4">
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
-                    <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    <a href="product.php">
+                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
                     </div>
                 </div>
-                <div class="mt-2 text-center">
+                <div class="mt-2 ml-2 text-left">
                     <h3 class="text-sm text-[#181C14]">Nior Stroller</h3>
                     <p class="text-lg text-[#181C14] font-semibold">RM1499.00</p>
                 </div>
             </div>
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
-                    <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    <a href="#">
+                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
                     </div>
                 </div>
-                <div class="mt-2 text-center">
+                <div class="mt-2 ml-2 text-left">
                     <h3 class="text-sm text-[#181C14]">Nior Stroller</h3>
                     <p class="text-lg text-[#181C14] font-semibold">RM1499.00</p>
                 </div>
