@@ -37,67 +37,171 @@
 
     <div class="mt-10 px-4">
         <div class="bg-white p-6 rounded-[20px]">
-
-            <div class="flex items-center space-x-4">
-                <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
-                    <img src="https://i.pinimg.com/736x/5e/22/46/5e22460fa3074d0b487a97a8a7f63b3f.jpg" alt="PFP" class="w-full h-full object-cover rounded-full">
+        
+            <div class="flex items-center space-x-4 justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+                        <img src="https://i.pinimg.com/736x/5e/22/46/5e22460fa3074d0b487a97a8a7f63b3f.jpg" alt="PFP" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg text-[#181C14]">Quinton Baby</p>
+                        <p class="text-xs text-gray-500">16 hours ago</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="font-semibold text-lg text-[#181C14]">John Doe</p>
-                    <p class="text-xs text-gray-500">16 hours ago</p>
+
+                <div class="relative cursor-pointer" onclick="toggleMenu(event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#181C14">
+                        <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/>
+                    </svg>
+                    <div id="menu" class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg hidden">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="downloadAllImages()">Download All Images</a></li>
+                            <li><a href="javascript:void(0)" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="copyText()">Copy Text</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="mt-4 text-justify">
-                <p class="text-lg font-bold text-[#181C14]">Our 12.12 Promotion is here!</p>
-                <p id="desc" class="text-sm text-[#181C14] mt-2">
-                    Enjoy amazing discounts from December 12th to December 15th. Don’t miss out on special deals, including our exclusive stroller promotion! Shop now and save big! 🛍️
-                    <span id="more" class="text-blue-500 cursor-pointer" onclick="toggleDescription()">See More</span>
+            <div class="mt-6 text-justify" id="promoText">
+                <h3 class="font-bold text-[#181C14] text-lg mb-4">Our 12.12 Promotion is here!</h3>
+                <p class="text-[#181C14] text-sm mb-4">
+                    Enjoy amazing discounts from December 12th to December 15th. Don’t miss out on special deals, including our exclusive stroller promotion!
+                    Shop now and save big! 🛍️
+                    <span id="moreText" class="hidden">This is just the beginning! Take advantage of unbeatable prices on all our products, including exclusive online-only offers. Hurry, while stocks last!</span>
+                    <a href="javascript:void(0)" id="seeMoreLink" class="text-blue-500 text-sm" onclick="toggleText()">See More</a>
                 </p>
-                <p id="fullDesc" class="hidden text-sm text-[#181C14] mt-2">
-                    Here is the full description that is initially hidden. It provides more detailed information about the content and context of the post.
-                </p>
             </div>
-
-            <div class="mt-6 grid grid-cols-2 gap-1">
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467644879_589809663715043_3137173989872180622_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZwOODpSm2DwQ7kNvgGDDJBO&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=AoQA53uCzsQ3jFz9oqcREbW&oh=00_AYA5M0OqGYPfSgc7Forr7_yqWJu5qS8cp6mJQTqCLtuqfQ&oe=676AC647" alt="Image 1" class="w-full h-full object-cover">
+        
+            <div class="mt-6 grid gap-1">
+                <div class="grid grid-cols-2 gap-1">
+                    <div class="w-full">
+                        <img src="assets/feed1.jpg" alt="Image 1" class="w-full object-cover cursor-pointer" onclick="openModal('assets/feed1.jpg')">
+                    </div>
+                    <div class="w-full">
+                        <img src="assets/feed2.jpg" alt="Image 2" class="w-full object-cover cursor-pointer" onclick="openModal('assets/feed2.jpg')">
+                    </div>
                 </div>
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467976745_589809740381702_1095967752859895391_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uy8U4F_irZ4Q7kNvgGiC6qH&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=Arwc-smHv-2Csw29P7GZqVN&oh=00_AYAuOkHNTOwoONUeOhXkldVLRwGc-nzGJDrWmf9_MEG5dA&oe=676AA120" alt="Image 2" class="w-full h-full object-cover">
-                </div>
-            </div>
-
-            <div class="mt-1 grid grid-cols-3 gap-1">
-                <div class="w-34 h-34">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467730936_589809633715046_1131166506602066430_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sMD-LBspo1wQ7kNvgHz2-kP&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=A7saqxSw8la6v4RipViS71G&oh=00_AYCEliCITSCJ-aYH6eb1g-p64dvPPo_oMQfF8OFMoAGuuQ&oe=676AB11E" alt="Image 3" class="w-full h-full object-cover">
-                </div>
-                <div class="w-34 h-34">
-                    <img src="https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/467713022_589809653715044_1243775729026650509_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HoGUNm0vCsQ7kNvgG3fupO&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=Ag_3m_ABIQsP6vU48tPOH-8&oh=00_AYClOhnMi3sP10IZgEDsCcy_iQMh9UoHsSFoD9_Wdg-Xag&oe=676A9E3E" alt="Image 4" class="w-full h-full object-cover">
-                </div>
-                <div class="w-34 h-34">
-                    <img src="https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/467502606_589809723715037_5634366192346471974_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=bgc-ih43eTgQ7kNvgHMnOJZ&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=AchK8caAqbmFKgq8cV18EXY&oh=00_AYDZWgPEpXXVllHQipCzesTRiAzzALIUwM1WIhJutN7tYg&oe=676A9135" alt="Image 5" class="w-full h-full object-cover">
+        
+                <div class="mt-1 grid grid-cols-3 gap-1">
+                    <div class="w-34 h-34">
+                        <img src="assets/feed3.jpg" alt="Image 3" class="w-full object-cover cursor-pointer" onclick="openModal('assets/feed3.jpg')">
+                    </div>
+                    <div class="w-34 h-34">
+                        <img src="assets/feed4.jpg" alt="Image 4" class="w-full object-cover cursor-pointer" onclick="openModal('assets/feed4.jpg')">
+                    </div>
+                    <div class="w-34 h-34">
+                        <img src="assets/feed5.jpg" alt="Image 5" class="w-full object-cover cursor-pointer" onclick="openModal('assets/feed5.jpg')">
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
+        
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+        <div class="relative flex justify-center items-center max-w-full max-h-full">
+            <img id="modalImage" src="" alt="Full Image" class="max-w-full max-h-[90vh] object-contain mx-auto">
+            <button class="absolute top-4 right-4 text-black text-2xl" onclick="closeModal()">&times;</button>
+        </div>
+    </div>
 
+        
     <script>
-        function toggleDescription() {
-            var fullDesc = document.getElementById('fullDesc');
-            var more = document.getElementById('more');
-
-            if (fullDesc.classList.contains('hidden')) {
-                fullDesc.classList.remove('hidden');
-                more.textContent = "See Less";
+        function toggleText() {
+            var moreText = document.getElementById('moreText');
+            var seeMoreLink = document.getElementById('seeMoreLink');
+        
+            if (moreText.classList.contains('hidden')) {
+                moreText.classList.remove('hidden');
+                seeMoreLink.innerText = "See Less";
             } else {
-                fullDesc.classList.add('hidden');
-                more.textContent = "See More";
+                moreText.classList.add('hidden');
+                seeMoreLink.innerText = "See More";
             }
+        }
+    
+        function openModal(imageSrc) {
+            var modal = document.getElementById('imageModal');
+            var modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.remove('hidden');
+        }
+    
+        function closeModal() {
+            var modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
         }
     </script>
 
+
+    <script>
+        function toggleMenu(event) {
+            var menu = document.getElementById('menu');
+            event.stopPropagation();
+            menu.classList.toggle('hidden');
+        }
+
+        document.addEventListener('click', function(event) {
+            var menu = document.getElementById('menu');
+            if (!menu.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        function downloadAllImages() {
+            alert('Downloading all images...');
+        }
+
+        function copyText() {
+            var textToCopy = document.getElementById('promoText').innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                alert("Text copied to clipboard!");
+            }).catch(function(error) {
+                alert("Failed to copy text: " + error);
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="mt-4 px-4">
         <div class="bg-white p-6 rounded-[20px]">
             <div class="flex items-center space-x-4">
@@ -135,25 +239,21 @@
                 <p class="text-lg font-bold text-[#181C14]">Our 12.12 Promotion is here!</p>
                 <p id="desc" class="text-sm text-[#181C14] mt-2">
                     Enjoy amazing discounts from December 12th to December 15th. Don’t miss out on special deals, including our exclusive stroller promotion! Shop now and save big! 🛍️
-                    <span id="more" class="text-blue-500 cursor-pointer" onclick="toggleDescription()">See More</span>
-                </p>
-                <p id="fullDesc" class="hidden text-sm text-[#181C14] mt-2">
-                    Here is the full description that is initially hidden. It provides more detailed information about the content and context of the post.
                 </p>
             </div>
 
             <div class="mt-6 grid grid-cols-2 gap-1">
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467644879_589809663715043_3137173989872180622_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZwOODpSm2DwQ7kNvgGDDJBO&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=AoQA53uCzsQ3jFz9oqcREbW&oh=00_AYA5M0OqGYPfSgc7Forr7_yqWJu5qS8cp6mJQTqCLtuqfQ&oe=676AC647" alt="Image 1" class="w-full h-full object-cover">
+                <div class="w-full">
+                    <img src="assets/feed7.jpg" alt="Image 1" class="w-full">
                 </div>
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467976745_589809740381702_1095967752859895391_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Uy8U4F_irZ4Q7kNvgGiC6qH&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=Arwc-smHv-2Csw29P7GZqVN&oh=00_AYAuOkHNTOwoONUeOhXkldVLRwGc-nzGJDrWmf9_MEG5dA&oe=676AA120" alt="Image 2" class="w-full h-full object-cover">
+                <div class="w-full">
+                    <img src="assets/feed8.jpg" alt="Image 2" class="w-full">
                 </div>
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-2.fna.fbcdn.net/v/t39.30808-6/467730936_589809633715046_1131166506602066430_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sMD-LBspo1wQ7kNvgHz2-kP&_nc_zt=23&_nc_ht=scontent.fmkz1-2.fna&_nc_gid=A7saqxSw8la6v4RipViS71G&oh=00_AYCEliCITSCJ-aYH6eb1g-p64dvPPo_oMQfF8OFMoAGuuQ&oe=676AB11E" alt="Image 3" class="w-full h-full object-cover">
+                <div class="w-full">
+                    <img src="assets/feed9.jpg" alt="Image 3" class="w-full">
                 </div>
-                <div class="w-full h-[200px]">
-                    <img src="https://scontent.fmkz1-1.fna.fbcdn.net/v/t39.30808-6/467713022_589809653715044_1243775729026650509_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5HoGUNm0vCsQ7kNvgG3fupO&_nc_zt=23&_nc_ht=scontent.fmkz1-1.fna&_nc_gid=Ag_3m_ABIQsP6vU48tPOH-8&oh=00_AYClOhnMi3sP10IZgEDsCcy_iQMh9UoHsSFoD9_Wdg-Xag&oe=676A9E3E" alt="Image 4" class="w-full h-full object-cover">
+                <div class="w-full">
+                    <img src="assets/feed10.jpg" alt="Image 4" class="w-ful">
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@
 <body class="bg-[#F2F2F2] overflow-auto">
 
     <div class="flex items-center justify-between px-6 py-2 bg-[#F2F2F2] h-32">
-        <a href="home.php">
+        <a href="stroller.php">
             <div class="bg-[#F3BF01] rounded-full w-10 h-10 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
@@ -27,12 +27,14 @@
         </a>
 
         <div class="flex gap-4">
-            <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3BF01">
-                    <path d="M260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/>
-                </svg>
-            </div>
-
+            <a href="catalog.php">
+                <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3BF01">
+                        <path d="M260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/>
+                    </svg>
+                </div>
+            </a>
+            
             <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
                 <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
             </div>
@@ -116,7 +118,7 @@
     </div>
 
     <div class="mt-10">
-        <div class="bg-[#F2D879] rounded-t-[50px] p-6 flex items-center justify-between cursor-pointer" onclick="toggleSection('videoTutorial')">
+        <div class="bg-[#A1D6CB] rounded-t-[50px] p-6 flex items-center justify-between cursor-pointer" onclick="toggleSection('videoTutorial')">
             <p class="text-[#181C14] text-lg font-medium mt-2">Video Tutorial</p>
             <div class="bg-black rounded-full p-2 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
@@ -124,7 +126,7 @@
                 </svg>
             </div>
         </div>
-        <div id="videoTutorial" class="hidden bg-[#F2D879] p-6">
+        <div id="videoTutorial" class="hidden bg-[#A1D6CB] p-6">
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-white p-4 rounded-[20px]">
                     <div class="flex justify-start mt-4">
@@ -154,8 +156,8 @@
         </div>
     </div>
 
-    <div class="bg-[#F2D879]">
-        <div class="bg-[#F39D19] rounded-t-[50px] p-6 flex items-center justify-between cursor-pointer" onclick="toggleSection('faq')">
+    <div class="bg-[#A1D6CB]">
+        <div class="bg-[#A19AD3] rounded-t-[50px] p-6 flex items-center justify-between cursor-pointer" onclick="toggleSection('faq')">
             <p class="text-[#181C14] text-lg font-medium mt-2">FAQ</p>
             <div class="bg-black rounded-full p-2 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
@@ -163,7 +165,7 @@
                 </svg>
             </div>
         </div>
-        <div id="faq" class="hidden bg-[#F39D19] p-6 text-justify">
+        <div id="faq" class="hidden bg-[#A19AD3] p-6 text-justify">
             <div class="bg-white p-4 rounded-[20px]">
                 <div class="flex justify-between items-center">
                     <p class="text-[#181C14] text-l font-medium">Is the Quinton Nior Stroller suitable for newborns?</p>
@@ -203,7 +205,7 @@
         }
     </script>
 
-    <div class="bg-[#F39D19]">
+    <div class="bg-[#A19AD3]">
         <div class="bg-white rounded-t-[50px] p-6 cursor-pointer" onclick="toggleSection('stroller')">
             <p class="text-[#181C14] text-2xl font-extrabold mt-2">Nior 2-Way Stroller</p>
             <div class="mt-10 mb-[150px]">
