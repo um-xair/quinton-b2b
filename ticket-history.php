@@ -67,7 +67,7 @@
                 </div>
                 <p class="text-sm text-gray-600">This is a brief description of the ticket details.</p>
             </div>
-            <div class="absolute top-2 right-2 bg-yellow-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
+            <div class="absolute top-3 right-3 bg-yellow-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
                 In Progress
             </div>
         </div>
@@ -84,7 +84,7 @@
                 </div>
                 <p class="text-sm text-gray-600">This is a brief description of the ticket details.</p>
             </div>
-            <div class="absolute top-2 right-2 bg-red-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
+            <div class="absolute top-3 right-3 bg-red-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
                 Pending
             </div>
         </div>
@@ -101,7 +101,7 @@
                 </div>
                 <p class="text-sm text-gray-600">This is a brief description of the ticket details.</p>
             </div>
-            <div class="absolute top-2 right-2 bg-green-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
+            <div class="absolute top-3 right-3 bg-green-300 text-[#181C14] py-2 px-6 rounded-full text-sm font-semibold">
                 Complete
             </div>
         </div>

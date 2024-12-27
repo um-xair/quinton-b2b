@@ -107,7 +107,7 @@
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-bold text-[#181C14]">Support Center</h2>
             </div>
-            <a href="boss-edit.php">
+            <a href="help.php">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-2">
                         <div class="w-10 h-10 flex items-center justify-center">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </a>
-            <a href="address.php">
+            <a href="feedback.php">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-2">
                         <div class="w-10 h-10 flex items-center justify-center">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </a>
-            <a href="password.php">
+            <a href="report-bug.php">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-2">
                         <div class="w-10 h-10 flex items-center justify-center">
