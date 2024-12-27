@@ -15,6 +15,7 @@
     </style>
 </head>
 <body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
+    
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
         <div class="bg-[#181C14] rounded-full p-2">
             <a href="home.php">

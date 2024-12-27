@@ -25,11 +25,11 @@
 
     <div class="clip-container">
         <div class="flex items-center px-6 py-2 h-32">
-            <div class="bg-[#F3BF01] rounded-full p-2">
+            <a href="home.php" class="bg-[#F3BF01] rounded-full p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#181C14" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
                 </svg>
-            </div>
+            </a>
         </div>
 
         <div class="absolute top-10 left-1/2 transform -translate-x-1/2 mt-8">
