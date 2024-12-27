@@ -56,7 +56,7 @@
     <div class="flex justify-between items-center mb-6">
         <h2 class="text-xl font-bold">Explore More</h2>
         <div class="bg-[#181C14] rounded-full p-2">
-            <a href="#">
+            <a href="tiktok.php">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="#fff" viewBox="0 0 24 24">
                     <path d="M9.29 16.29L13.59 12 9.29 7.71 10.71 6.29 15.71 12 10.71 17.71z"/>
                 </svg>
