@@ -51,13 +51,13 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div class="w-full h-auto">
-                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls>
+                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls onclick="openFullscreen(this)">
                     <source src="assets/tiktok.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div class="w-full h-auto">
-                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls>
+                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls onclick="openFullscreen(this)">
                     <source src="assets/tiktok2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -79,13 +79,27 @@
         
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
             <div class="w-full h-auto">
-                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls>
+                <video class="w-full h-auto object-cover rounded-[10px]" autoplay muted loop controls onclick="openFullscreen(this)">
                     <source src="assets/tiktok3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
     </div>
+
+    <script>
+        function openFullscreen(videoElement) {
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            } else if (videoElement.mozRequestFullScreen) { // Firefox
+                videoElement.mozRequestFullScreen();
+            } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                videoElement.webkitRequestFullscreen();
+            } else if (videoElement.msRequestFullscreen) { // IE/Edge
+                videoElement.msRequestFullscreen();
+            }
+        }
+    </script>
 
 </body>
 </html>
