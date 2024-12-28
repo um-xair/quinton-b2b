@@ -66,7 +66,7 @@
                     <i class="fa-regular fa-envelope text-4xl text-[#F3BF01]"></i>
                     <p class="mt-2 text-sm text-[#F3BF01]">Email</p>
                 </div>
-                <a href="rating.html">
+                <a href="rating.php">
                     <div class="bg-[#181C14] p-4 rounded-[15px] text-center flex flex-col items-center justify-center">
                         <i class="fa-solid fa-star text-4xl text-[#F3BF01]"></i>
                         <p class="mt-2 text-sm text-[#F3BF01]">Rate Me</p>

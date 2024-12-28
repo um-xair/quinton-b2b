@@ -14,7 +14,7 @@
 </head>
 <body class="bg-white h-screen flex items-center justify-center text-center px-6">
     <div class="relative w-full h-screen">
-        <a href="http://localhost/quinton-b2b/address.php">
+        <a href="address.php">
             <div class="mt-10 absolute top-4 right-4 bg-[#181C14] text-white p-2 rounded-full cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>

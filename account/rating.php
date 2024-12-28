@@ -15,7 +15,7 @@
 </head>
 <body class="bg-white h-screen flex items-center justify-center text-center px-6">
     <div class="relative w-full h-screen">
-        <a href="sales.html">
+        <a href="sales.php">
             <div class="mt-10 absolute top-4 right-4 bg-[#181C14] text-white p-2 rounded-full cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
@@ -25,7 +25,7 @@
 
         <div class="mt-40 w-full h-60 mb-4">
             <h2 class="text-2xl font-bold text-[#181C14] mb-4">Are you happy with our service?</h2>
-            <img id="service-image" src="assets/5star.gif" alt="Profile Picture" class="w-52 h-52 mx-auto object-cover">
+            <img id="service-image" src="../assets/5star.gif" alt="Profile Picture" class="w-52 h-52 mx-auto object-cover">
             <p id="service-desc" class="text-lg text-[#181C14] mt-2">Absolutely fantastic!</p>
         
             <div class="flex justify-center items-center mt-2">
@@ -60,19 +60,19 @@
             });
 
             if (starCount === 1) {
-                image.src = "assets/1star.gif";
+                image.src = "../assets/1star.gif";
                 desc.textContent = "Hmm, not great.";
             } else if (starCount === 2) {
-                image.src = "assets/2star.gif";
+                image.src = "../assets/2star.gif";
                 desc.textContent = "It's okay.";
             } else if (starCount === 3) {
-                image.src = "assets/3star.gif";
+                image.src = "../assets/3star.gif";
                 desc.textContent = "Pretty good!";
             } else if (starCount === 4) {
-                image.src = "assets/4star.gif";
+                image.src = "../assets/4star.gif";
                 desc.textContent = "Good service!";
             } else if (starCount === 5) {
-                image.src = "assets/5star.gif";
+                image.src = "../assets/5star.gif";
                 desc.textContent = "Excellent service!";
             }
         }
