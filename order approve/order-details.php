@@ -15,7 +15,7 @@
 </head>
 <body class="bg-[#F2F2F2] overflow-auto mb-[200px]">
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
-        <a href="order-approve.html">
+        <a href="order-approve.php">
             <div class="bg-[#181C14] rounded-full p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
@@ -96,7 +96,7 @@
     <div class="fixed bottom-10 left-4 right-4 bg-[#F3BF01] py-4 px-4 rounded-full z-[999]">
         <div class="flex justify-around gap-2">
             <button class="w-1/2 bg-white border-2 border-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='#'">Reject</button>
-            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='../category product/to-pay.php'">Approve</button>            
+            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='approve-msg.php'">Approve</button>            
         </div>
     </div>
     

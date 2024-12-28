@@ -16,7 +16,7 @@
 
     <div id="splash-screen" class="bg-white p-8 w-full max-w-md opacity-0 transition-opacity duration-1000">
         <div class="flex justify-center mb-6">
-            <img src="assets/pic.jpg" alt="Success Image" class="w-full h-full">
+            <img src="../assets/pic.jpg" alt="Success Image" class="w-full h-full">
         </div>
         <h1 class="text-3xl font-bold text-[#181C14] mt-10 text-center">Product approved!</h1>
     </div>
@@ -32,7 +32,7 @@
                 splashScreen.classList.add('opacity-0');
                 
                 setTimeout(function() {
-                    window.location.href = 'home.php'; 
+                    window.location.href = '../category product/to-pay.php'; 
                 }, 500); 
             }, 3000);
         }

@@ -51,7 +51,7 @@
 
             <div class="flex space-x-4 mt-4">
                 <button class="w-1/2 bg-white border-2 border-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='#'">Reject</button>
-                <button class="w-1/2 bg-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='to-pay.php'">Approve</button>
+                <button class="w-1/2 bg-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='approve-msg.php'">Approve</button>
             </div>
         </div>
     </div>
