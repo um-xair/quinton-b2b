@@ -98,27 +98,49 @@
     </div>
     <div class="grid grid-cols-2 gap-2 mb-2">
         <div class="text-center">
-            <img src="assets/stroller.webp" alt="Newest Release 1" class="w-full h-auto object-cover">
+            <img src="assets/stroller.webp" alt="Newest Release 1" class="w-full h-auto object-cover" onclick="openModal('assets/stroller.webp')">
         </div>
         <div class="text-center">
-            <img src="assets/desc1.webp" alt="Newest Release 2" class="w-full h-auto object-cover">
+            <img src="assets/desc1.webp" alt="Newest Release 2" class="w-full h-auto object-cover" onclick="openModal('assets/desc1.webp')">
         </div>
     </div>
     <div class="grid grid-cols-3 gap-2">
         <div class="text-center">
-            <img src="assets/desc3.webp" alt="Newest Release 3" class="w-full h-auto object-cover">
+            <img src="assets/desc3.webp" alt="Newest Release 3" class="w-full h-auto object-cover" onclick="openModal('assets/desc3.webp')">
         </div>
         <div class="text-center">
-            <img src="assets/desc1.webp" alt="Newest Release 4" class="w-full h-auto object-cover">
+            <img src="assets/desc1.webp" alt="Newest Release 4" class="w-full h-auto object-cover" onclick="openModal('assets/desc1.webp')">
         </div>
         <div class="relative text-center">
-            <img src="assets/desc3.webp" alt="Newest Release 5" class="w-full h-auto object-cover">
+            <img src="assets/desc3.webp" alt="Newest Release 5" class="w-full h-auto object-cover" onclick="openModal('assets/desc3.webp')">
             <div class="absolute inset-0 bg-[#181C14] bg-opacity-50 flex items-center justify-center">
                 <span class="text-white text-2xl font-bold">+2</span>
             </div>
         </div>
     </div>
 </div>
+
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+    <div class="relative flex justify-center items-center max-w-full max-h-full">
+        <img id="modalImage" src="" alt="Full Image" class="max-w-full max-h-[90vh] object-contain mx-auto">
+        <button class="absolute top-4 right-4 text-[#181C14] text-2xl" onclick="closeModal()">&times;</button>
+    </div>
+</div>
+
+<script>
+    function openModal(imageSrc) {
+        var modal = document.getElementById('imageModal');
+        var modalImage = document.getElementById('modalImage');
+        modalImage.src = imageSrc;
+        modal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+        var modal = document.getElementById('imageModal');
+        modal.classList.add('hidden');
+    }
+</script>
+
 
 <div class="mt-10 px-4">
     <div class="flex justify-between items-center mb-6">
