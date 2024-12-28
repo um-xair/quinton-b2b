@@ -49,10 +49,10 @@
                     class="absolute right-4 top-3 text-[#181C14] cursor-pointer"
                     id="togglePassword"
                 >
-                    <i class="fas fa-eye" id="eyeIcon"></i>
+                    <i class="fas fa-eye-slash" id="eyeIcon"></i>
                 </span>
             </div>
-            <a href="msg.html">
+            <a href="msg.php">
                 <button
                     type="button"
                     class="mt-10 w-[300px] bg-[#181C14] text-white text-lg font-semibold px-4 py-4 rounded-full"
@@ -73,11 +73,11 @@
             passwordField.type = type;
 
             if (type === 'password') {
-                eyeIcon.classList.remove('fa-eye-slash');
-                eyeIcon.classList.add('fa-eye');
-            } else {
                 eyeIcon.classList.remove('fa-eye');
                 eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
             }
         });
     </script>

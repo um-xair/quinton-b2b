@@ -42,7 +42,7 @@
         setTimeout(() => {
             document.body.classList.add('fade-out');
             setTimeout(() => {
-                window.location.href = "boarding-page.html";
+                window.location.href = "onboarding.php";
             }, 2000);
         }, 2000);
     </script>

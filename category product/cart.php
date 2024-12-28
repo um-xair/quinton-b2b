@@ -18,7 +18,7 @@
     
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
         <div class="bg-[#181C14] rounded-full p-2">
-            <a href="home.php">
+            <a href="../home.php">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
                 </svg>
@@ -53,7 +53,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>
@@ -89,7 +89,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>
@@ -123,7 +123,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>
@@ -202,7 +202,7 @@
                 <p class="text-[#181C14] text-sm">Total</p>
                 <p class="text-[#181C14] font-bold text-2xl total-price">RM0.00</p>
             </div>
-            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full">Checkout</button>
+            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='to-pay.php'">Checkout</button>
         </div>
     </div>
 </body>

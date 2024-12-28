@@ -29,16 +29,16 @@
     <div class="mt-10 w-full px-4">
         <div class="grid grid-cols-1 gap-4">
             <div class="relative">
-                <img src="assets/niordesc2.webp" alt="Image 1" class="w-full h-auto object-cover">
-                <a href="assets/niordesc2.webp" download="desc1.webp" class="absolute bottom-2 right-2 bg-[#F3BF01] text-white rounded-full p-2">
+                <img src="../assets/niordesc2.webp" alt="Image 1" class="w-full h-auto object-cover">
+                <a href="../assets/niordesc2.webp" download="desc1.webp" class="absolute bottom-2 right-2 bg-[#F3BF01] text-white rounded-full p-2">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#181C14">
                         <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
                     </svg>
                 </a>
             </div>
             <div class="relative">
-                <img src="assets/niordesc.webp" alt="Image 2" class="w-full h-auto object-cover">
-                <a href="assets/niordesc.webp" download="desc2.webp" class="absolute bottom-2 right-2 bg-[#F3BF01] text-white rounded-full p-2">
+                <img src="../assets/niordesc.webp" alt="Image 2" class="w-full h-auto object-cover">
+                <a href="../assets/niordesc.webp" download="desc2.webp" class="absolute bottom-2 right-2 bg-[#F3BF01] text-white rounded-full p-2">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#181C14">
                         <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
                     </svg>
@@ -56,8 +56,8 @@
         document.getElementById("download-all-btn").addEventListener("click", function () {
             const zip = new JSZip();
             const images = [
-                { name: "desc1.webp", url: "assets/niordesc2.webp" },
-                { name: "desc2.webp", url: "assets/niordesc.webp" }
+                { name: "desc1.webp", url: "../assets/niordesc2.webp" },
+                { name: "desc2.webp", url: "../assets/niordesc.webp" }
             ];
 
             const downloadImage = async (image) => {

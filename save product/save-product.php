@@ -17,7 +17,7 @@
     
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
         <div class="bg-[#181C14] rounded-full p-2">
-            <a href="home.php">
+            <a href="../home.php">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
                 </svg>
@@ -41,7 +41,7 @@
         <div class="grid grid-cols-2 gap-4">
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
-                    <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     <div class="absolute top-2 right-2 bg-white p-2 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#F3BF01" width="20px" height="20px" viewBox="0 0 24 24" stroke="none">
                             <path d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -56,7 +56,7 @@
     
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
-                    <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                    <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     <div class="absolute top-2 right-2 bg-white p-2 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#F3BF01" width="20px" height="20px" viewBox="0 0 24 24" stroke="none">
                             <path d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>

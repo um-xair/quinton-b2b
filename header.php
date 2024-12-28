@@ -52,7 +52,7 @@
         <div class="px-2 py-4 mt-10">
             <h2 class="text-[#181C14] text-xl font-bold px-4">Explore More</h2>
             <div class="grid grid-cols-2 gap-2 px-4 py-4">
-            <a href="order-approve.html">
+            <a href="order approve/order-approve.php">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px] relative">
                     <div class="absolute top-2 right-2 bg-yellow-400 text-[#181C14] text-sm rounded-full px-4 py-2">1</div>
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
@@ -62,7 +62,7 @@
                 </div>
             </a>
 
-            <a href="cart.php">
+            <a href="category product/cart.php">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
                         <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
@@ -71,7 +71,7 @@
                 </div>
             </a>
 
-            <a href="category.php">
+            <a href="category product/category.php">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
                         <path d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z"/>
@@ -80,7 +80,7 @@
                 </div>
             </a>
 
-            <a href="save-product.html">
+            <a href="save product/save-product.php">
                 <div class="bg-[#F2F2F2] text-center p-2 rounded-[20px] flex flex-col items-center justify-center h-[200px]">
                     <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#181C14">
                         <path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/>

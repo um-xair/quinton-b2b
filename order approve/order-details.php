@@ -54,7 +54,7 @@
         <div class="bg-white rounded-[20px] p-4">
             <div class="flex items-center space-x-6">
                 <div class="w-40 h-24 bg-[#F2F2F2] rounded-[10px] p-2 flex items-center justify-center">
-                    <img src="assets/Nior Creamy White.webp" alt="Stroller" class="w-full h-full object-cover">
+                    <img src="../assets/Nior Creamy White.webp" alt="Stroller" class="w-full h-full object-cover">
                 </div>
     
                 <div class="flex flex-col space-y-2 w-full">
@@ -96,7 +96,7 @@
     <div class="fixed bottom-10 left-4 right-4 bg-[#F3BF01] py-4 px-4 rounded-full z-[999]">
         <div class="flex justify-around gap-2">
             <button class="w-1/2 bg-white border-2 border-[#F3BF01] text-[#181C14] py-3 rounded-full" onclick="window.location.href='#'">Reject</button>
-                <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='to-pay.php'">Approve</button>
+            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='../category product/to-pay.php'">Approve</button>            
         </div>
     </div>
     

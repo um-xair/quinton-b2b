@@ -17,17 +17,17 @@
     
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
         <div class="bg-[#181C14] rounded-full p-2">
-            <a href="home.php">
+            <a href="../home.php">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
                     <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
                 </svg>
             </a>
         </div>
-        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">PROMOTION</h1>
+        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Promotion</h1>
     </div>
 
     <div class="mt-10 w-full px-4">
-        <img src="assets/banner.png" alt="Banner" class="w-full h-full object-cover">
+        <img src="../assets/banner.png" alt="Banner" class="w-full h-full object-cover">
     </div>
 
     <div class="mt-10 px-4">
@@ -35,7 +35,7 @@
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
                     <a href="product.php">
-                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                        <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
@@ -49,7 +49,7 @@
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
                     <a href="#">
-                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                        <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>

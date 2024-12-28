@@ -66,15 +66,15 @@
         <div class="swiper-container relative">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex flex-col items-center p-4">
-                    <img src="assets/Nior Creamy White.webp" alt="Product 1" class="w-full h-full object-cover">
+                    <img src="../assets/Nior Creamy White.webp" alt="Product 1" class="w-full h-full object-cover">
                 </div>
 
                 <div class="swiper-slide flex flex-col items-center p-4">
-                    <img src="assets/nior.png" alt="Product 2" class="w-full h-full object-cover">
+                    <img src="../assets/nior.png" alt="Product 2" class="w-full h-full object-cover">
                 </div>
 
                 <div class="swiper-slide flex flex-col items-center p-4">
-                    <img src="assets/nior.webp" alt="Product 3" class="w-full h-full object-cover">
+                    <img src="../assets/nior.webp" alt="Product 3" class="w-full h-full object-cover">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -133,7 +133,7 @@
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-white p-4 rounded-[20px]">
                     <div class="flex justify-start mt-4">
-                        <img src="assets/logo.png" alt="Logo 1" class="w-2/3">
+                        <img src="../assets/logo.png" alt="Logo 1" class="w-2/3">
                     </div>
                     <div class="flex items-center justify-center h-[150px]">
                         <p class="text-[#181C14] text-sm text-left">How to Fold for Front-Facing and Rear Facing</p>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="bg-white p-4 rounded-[20px]">
                     <div class="flex justify-start mt-4">
-                        <img src="assets/logo.png" alt="Logo 2" class="w-2/3">
+                        <img src="../assets/logo.png" alt="Logo 2" class="w-2/3">
                     </div>
                     <div class="flex items-center justify-center h-[150px]">
                         <p class="text-[#181C14] text-sm text-left">How to remove Nior Stroller padding</p>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="bg-white p-4 rounded-[20px]">
                     <div class="flex justify-start mt-4">
-                        <img src="assets/logo.png" alt="Logo 3" class="w-2/3">
+                        <img src="../assets/logo.png" alt="Logo 3" class="w-2/3">
                     </div>
                     <div class="flex items-center justify-center h-[150px]">
                         <p class="text-[#181C14] text-sm text-left">How to Use Nior Stroller</p>
@@ -274,7 +274,7 @@
                 <p class="text-[#181C14] text-sm">Total</p>
                 <p class="text-[#181C14] font-bold text-2xl">RM1499</p>
             </div>
-            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full">Add to Cart</button>
+            <button class="w-1/2 bg-[#181C14] text-white py-3 rounded-full" onclick="window.location.href='cart.php'">Add to Cart</button>
         </div>
     </div>
 

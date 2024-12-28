@@ -88,7 +88,7 @@
         <div class="bg-white rounded-[20px] px-4 py-6">
             <div class="flex items-center space-x-6">
                 <div class="w-40 h-24 bg-[#F2F2F2] rounded-[10px] p-2 flex items-center justify-center">
-                    <img src="assets/Nior Creamy White.webp" alt="Stroller" class="w-full h-full object-cover">
+                    <img src="../assets/Nior Creamy White.webp" alt="Stroller" class="w-full h-full object-cover">
                 </div>
     
                 <div class="flex flex-col space-y-2 w-full">

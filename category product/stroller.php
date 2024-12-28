@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Stroller</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
                 </svg>
             </a>
         </div>
-        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">STROLLER</h1>
+        <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Stroller</h1>
     </div>
 
     <div class="mt-10 px-4">
@@ -31,7 +31,7 @@
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
                     <a href="product.php">
-                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                        <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
@@ -45,7 +45,7 @@
             <div>
                 <div class="relative bg-[#F2F2F2] rounded-[20px] p-4">
                     <a href="#">
-                        <img src="assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
+                        <img src="../assets/Nior Creamy White.webp" alt="Product" class="w-full h-full object-cover rounded-[20px]">
                     </a>
                     <div class="absolute top-2 right-2 bg-white rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-regular fa-heart text-[#F3BF01] text-xl cursor-pointer" onclick="toggleHeart(this)"></i>
