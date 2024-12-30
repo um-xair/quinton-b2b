@@ -14,7 +14,8 @@
     </style>
 </head>
 <body class="bg-[#FFFFFF] overflow-auto mb-[200px]">
-    <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
+
+    <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32 relative">
         <a href="home.php">
             <div class="bg-[#181C14] rounded-full p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="20px" height="20px">
@@ -23,7 +24,39 @@
             </div>
         </a>
         <h1 class="flex-1 text-center text-xl font-semibold text-[#181C14]">Notification</h1>
+        <div class="relative">
+            <button id="menu-button" class="bg-[#181C14] rounded-full p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
+                    <path d="M240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400Z"/>
+                </svg>
+            </button>
+            <div id="menu-dropdown" class="hidden absolute right-0 mt-2 w-40 bg-[#181C14] rounded-lg shadow-lg">
+                <ul class="py-2">
+                    <li>
+                        <button class="w-full px-4 py-2 text-left text-white hover:bg-[#333] rounded-md">
+                            Delete All
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuDropdown = document.getElementById('menu-dropdown');
+
+        menuButton.addEventListener('click', () => {
+            menuDropdown.classList.toggle('hidden');
+        });
+
+        // Close the menu if clicked outside
+        document.addEventListener('click', (event) => {
+            if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+                menuDropdown.classList.add('hidden');
+            }
+        });
+    </script>
 
     <div class="mt-10 px-4 flex flex-col items-center justify-center">
         <img src="assets/no-order.jpg" alt="No Orders Yet" class="w-full h-auto object-contain mb-4">
