@@ -53,7 +53,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/Nior Creamy White.webp" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>
@@ -89,7 +89,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/Nior Creamy White.webp" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="relative bg-white p-4 rounded-[20px] product-item mt-6">
+            <div class="relative bg-white product-item mt-6">
                 <div class="absolute -top-1 -right-1 cursor-pointer">
                     <div class="bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center">
                         <i class="fas fa-times text-sm"></i>
@@ -123,7 +123,7 @@
 
                     <div class="flex ml-2 items-start">
                         <div class="flex-shrink-0 bg-[#F2F2F2] w-32 h-32 p-2 rounded-[20px] flex items-center justify-center">
-                            <img src="../assets/nior.png" alt="Product" class="object-cover rounded" />
+                            <img src="../assets/Nior Creamy White.webp" alt="Product" class="object-cover rounded" />
                         </div>
                         <div class="ml-4 flex-grow">
                             <p class="text-lg font-semibold text-[#181C14]">Nior</p>

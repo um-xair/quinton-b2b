@@ -14,7 +14,7 @@
     </div>
     <div class="grid grid-cols-3 gap-4 mb-6">
         <div class="text-center">
-            <a href="stroller.php">
+            <a href="category product/stroller.php">
                 <img src="assets/stroller.webp" alt="Category Image 1" class="w-full h-auto object-cover rounded-[20px]">
                 <p class="mt-2 text-xs text-[#181C14]">Stroller</p>
             </a>
