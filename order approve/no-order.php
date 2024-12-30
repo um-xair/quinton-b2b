@@ -13,7 +13,7 @@
         }
     </style>
 </head>
-<body class="bg-white overflow-auto mb-[200px]">
+<body class="bg-white overflow-hidden mb-[200px] h-screen">
     <div class="flex items-center px-6 py-2 bg-[#F3BF01] h-32">
         <a href="../home.php">
             <div class="bg-[#181C14] rounded-full p-2">
